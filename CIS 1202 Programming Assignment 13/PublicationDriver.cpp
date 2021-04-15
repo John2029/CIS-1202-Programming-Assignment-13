@@ -16,15 +16,14 @@ int findPublication(Publication[], int, string);
 void displayInfo(Publication);
 
 int main() {
-
+	
 	/* getPublications (to read the input file into the array)*/
-
+	
 	const int max = 50;
 	Publication Publications[max]{};
 	int numTitles = 0;
 	int choice = 1;
 	string itemName;
-
 	do {
 		int choice = displayMenu("1. Display All Publications\n2. Display Publication Titles\n3. Find a Publication \n4. Check Out \n5. Check In \n6. Exit\n", 1, 6);
 	switch (choice) {
